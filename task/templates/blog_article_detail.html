@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+    {% block content %}
+    <div class="container" style="max-width:800px">
+        <div class="">
+            <h1 class="display-4">{{Blog_article.title}}</h1>
+            <div class="">
+                <div class="row">
+                    <h3>slug: </h3>
+                <text class="text-muted">{{Blog_article.slug}}</text>
+                </div>
+                
+                <div class="row">
+                    <h3>content: </h3>
+                <text class="text-muted">{{Blog_article.content}}</text>
+                </div>
+                
+                <div class="row">
+                    <h3>author: </h3>
+                <text class="text-muted">{{Blog_article.author}}</text>
+                </div>
+                
+                <div class="row">
+                    <h3>pub_date: </h3>
+                <text class="text-muted">{{Blog_article.pub_date}}</text>
+                </div>
+                
+                <div class="row">
+                    <h3>online: </h3>
+                <text class="text-muted">{{Blog_article.online}}</text>
+                </div>
+                
+            </div>
+        </div>
+        <a href="{% url 'blog_article_list' %}">article_list</a>
+        <style>
+            .text-muted{
+                font-size: 25px;
+            }
+        </style>
+  
+    {% endblock %}
