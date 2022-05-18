@@ -39,7 +39,7 @@ class addcontact(FormView):
         #debug@mir.de
         try:
 
-            email = EmailMessage(subject, message,form.cleaned_data['email'], ['kmkmargelan@yahoo.fr'],reply_to=['debug@mir.de'],)
+            email = EmailMessage(subject, message,form.cleaned_data['email'], [message,form.cleaned_data['email']],reply_to=['debug@mir.de'],)
             
             
             email.send()
