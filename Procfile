@@ -1,0 +1,1 @@
+web: gunicorn DJANGO_TASK_TEMPLATE.wsgi
