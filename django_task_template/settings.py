@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'nlrbnr_gv3ud=8@$lj!8kxe$fx(7o*nh5(0(2vs9d2=d4k=+7w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['taskismo.herokuapp.com','localhost', '127.0.0.1']
 
 
 # Application definition
