@@ -1,1 +1,1 @@
-web: gunicorn DJANGO_TASK_TEMPLATE.wsgi
+web: gunicorn django_task_template.wsgi
