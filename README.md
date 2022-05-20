@@ -1,7 +1,10 @@
 # django_task_template
 
-url:https://github.com/osmi2017/django_task_template.git
+url_github:https://github.com/osmi2017/django_task_template.git
+url_online=https://taskismo.herokuapp.com/task/
 
 admin username=admin
 pasword=Task##12
  
+article = http://localhost:8000/task/
+add_contact =http://localhost:8000/task/add/
