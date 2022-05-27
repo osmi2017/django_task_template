@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-   
+    
 ]
 
 MIDDLEWARE = [
@@ -49,8 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-   
-    "whitenoise.middleware.WhiteNoiseMiddleware",
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'django_task_template.urls'
@@ -120,9 +119,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-STATIC_HOST = os.environ.get("DJANGO_STATIC_HOST", "")
-STATIC_URL = STATIC_HOST + "/static/"
-#STATIC_ROOT = BASE_DIR / "staticfiles"
+
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / "staticfiles
 
 MAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
@@ -131,5 +130,5 @@ EMAIL_HOST_USER = "yourmail@gmail.com"
 EMAIL_HOST_PASSWORD = 'yourpassword'
 EMAIL_PORT = '587'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
