@@ -6,6 +6,7 @@ from . forms import AddForm
 from django.core.mail import send_mail, BadHeaderError,EmailMessage
 
 
+
 # Create your views here.
 class blog_articleList(ListView):
     paginate_by = 5
